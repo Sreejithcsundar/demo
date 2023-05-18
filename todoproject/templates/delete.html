@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="banner"><label><h1><b> DELETE PAGE</b></h1></label>
+                <div class="banner-text">
+                    <hr>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+<form method="POST">
+  {% csrf_token %}
+  <p>Are you sure this task is done</p>
+  <button type="submit" class="text-danger">Conform</button>
+
+
+</form>
+</div>
+
+
+ <marquee behavior="scroll" direction="left" scrollamount="5">
+            © 2023 Your Website. All Rights Reserved. | Designed By Sreejith_Sundar
+ </marquee>
+{% endblock %}

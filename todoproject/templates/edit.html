@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="banner"><label><h1><b> UPDATE PAGE</b></h1></label>
+                <div class="banner-text">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">Task update</div>
+        <div class="card-body">
+            <form method="POST">
+            {% csrf_token %}
+                {{x.as_p}}
+            <button type="submit">conform</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+ <marquee behavior="scroll" direction="left" scrollamount="5">
+            © 2023 Your Website. All Rights Reserved. | Designed By Sreejith_Sundar
+ </marquee>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid bg-primary">
+        <div class="col-md-12">
+            <div class="banner text-center text-white"><label><h1><b> TODO APP</b></h1></label></div>
+        </div>
+</div>
+<div class="container-fluid main">
+    <div class="row border">
+        <div class="col-md-4 part1">
+            <form method="POST">
+             {% csrf_token %}
+                <div class="p-3 shadow">
+                    <div class="form-group">
+
+                        <input type="text" class="form-control task-input" name="task" placeholder="task">
+                        <input type="text" name="priority" class="priority-input" placeholder="priority">
+                        <input type="date" name="date" class="date-input" placeholder="date">
+                        <input type="submit" placeholder="submit" class="btn btn-success button">
+                    </div>
+                </div>
+             </form>
+        </div>
+        <div class="col-md-8 part2">
+            <h4>Task completed</h4>
+            {% for i in task1 %}
+            <div class="shadow-card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p>{{i.priority}}</p>
+                    <p>{{i.date}}</p>
+                    <a href="{% url 'delete' i.id %}" class="btn btn-danger">Done</a>
+                    <a href="{% url 'update' i.id %}" class="btn btn-success">Update</a>
+                </div>
+            </div><br><hr>
+            {% endfor %}
+            <hr> <!-- Horizontal line -->
+        </div>
+    </div>
+</div>
+
+ <marquee behavior="scroll" direction="left" scrollamount="5">
+            © 2023 Your Website. All Rights Reserved. | Designed By Sreejith_Sundar
+ </marquee>
+
+
+{% endblock %}
