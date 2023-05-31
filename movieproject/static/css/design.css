@@ -1,0 +1,30 @@
+/* detail */
+#column1{
+ background: black;}
+
+#column2{
+ background: #d7fcfc;}
+
+/* movie */
+
+#box{
+border-radius:50px;
+background: white;
+padding-top: 10px;
+}
+
+#box1{
+background: #d7fcfc;
+border-radius: 50px;
+}
+
+.img{
+ border-radius: 50px;}
+
+#search{
+background: #c7e312;
+color: black;
+height: 900px;
+padding:5px;
+margin: 45px;
+}
