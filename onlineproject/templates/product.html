@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+ {% if category %}
+  {{product.name}} -ABC STORE
+ {% endif %}
+{% endblock %}
+{% block content %}
+
+<div class="row my_prod_row_class">
+        <div class="mx_auto" id="bar">
+            <p><a href="{% url 'shop:allProdCat' %}" style="text-decoration: none;">Home</a> | <a href="{{product.category.get_url}}" style="text-decoration: none;"> {{ product.category}}</a> | {{product.name}}</p>
+        </div>
+  <div class="container-fluid">
+    <br>
+    <div class="row">
+        <div class="col-md-4 text-center colum1">
+            <div>
+                 <img src="{{product.image.url}}" class="product-img mt-5" alt="{{product.name}}">
+            </div>
+        </div>
+        <div class="col-md-8  colum2">
+            <div>
+                <h1 class="name">{{product.name}}</h1>
+                <h3 class="price">${{product.price}}</h3>
+                <h4 class="des">Product Description</h4>
+                <p class="description">{{product.description}}</p>
+
+                {% if product.stock <= 0 %}
+                    <P class=""><b>Out of stock</b></P>
+                {% else %}
+                     {% if user.is_authenticated %}
+                     <div class="butt">
+                       <a href="{% url 'shop:checkout' %}" class="btn btn-success ">Buy Now</a>
+                       <a class="btn btn-secondary " href="{% url 'cartapp:add_cart' product.id %}">Add to Cart</a>
+                       <br>
+                       <br>
+                     </div>
+                     {% else %}
+                     <div class="text-center">
+                       <b class=""> PLEASE LOGIN AND BUY </b>
+                     </div>
+                     {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

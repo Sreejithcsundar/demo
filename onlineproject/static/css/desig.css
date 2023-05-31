@@ -1,0 +1,293 @@
+.product-image{
+               width:250px;
+               height:250px;}
+
+
+
+/** FOOTER **/
+footer{
+background:#99ddf7;
+}
+.footer-row{
+background:#76d1f5;}
+.links{
+text-decoration:none;
+color:black;}
+/** NAVBAR **/
+/*** CART PAGE ***/
+
+.table-row{
+    background-color: #edf2a0;
+}
+.thead{
+ font-size: 25px;
+}
+.my_custom_table{
+    min-width:400px;
+    font-size:14px;
+    }
+
+.my_custom_thead{
+    font-weight:normal;
+    text-transform:uppercase;
+    letter-spacing:.2em;
+    background-color:#5c99fa !important;
+    }
+
+.custom-a{
+    text-decoration:none;
+
+}
+
+.custom-icon{
+    text-decoration:none;
+    color:#bd571c !important;
+}
+
+.my_custom_button{
+    margin-top:5px;
+}
+
+.custom_image{
+   width:300px;
+   height:400px;
+}
+.text{
+font-size: 20px;
+}
+
+.custom-icon {
+  font-size: 25px;
+
+
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*** CHECKOUT PAGE ***/
+body {
+  font-family: Arial, sans-serif;
+
+}
+
+.container{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button-container {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+    }
+
+.button-container .a1 {
+  height: 40px;
+  width: 40%;
+  margin: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  padding-top:7px;
+  text-decoration:none;
+}
+
+
+.a1:hover {
+  background-color: #f78120;
+}
+.form-group:hover{
+  background-color: #f78120;
+}
+/*** login page ***/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: black;
+}
+
+/*** CATEGORY PAGE ***/
+.top1{
+ background:white;}
+.cf{
+height:30px;
+width:auto;
+background:#57fa7b;
+}
+
+
+.my_image{
+height:400px;
+width:500px;
+
+}
+.cat{
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fac532;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+.card{
+ width:200px;
+ height:320px;
+ background-color: white;
+ border: 1px solid #ccc;
+ border-radius: rounded-pill;
+
+ }
+.card-head{
+ width:125px;
+ height:140px;
+ background-color: white;
+ border: 1px solid white;
+ border-radius: 1px;
+ margin-left:35px;
+ margin-right:35px;
+ margin-bottom:5px;
+ margin-bottom:-10px;
+
+ }
+ .card-body{
+ padding-top:40px;
+ width:100%;
+ height:60px;
+ font-size:14px;
+ display: inline;}
+.button {
+  width: 50px;
+  height: 50px;
+  font-size: 10px;
+}
+
+.button1 {
+  width: 70px;
+  height: 50px;
+  font-size: 10px;
+}
+
+
+/*** PRODUCT PAGE ***/
+.my_prod_row_class{
+ padding-top: 25px;
+ padding-bottom: 20px;}
+
+#bar{
+ background:white;
+ font-size: 20px;
+ text-decoration: none;}
+
+.product-img{
+ padding-top:20px;
+ width: 350px;
+ height: 400px;
+ border-radius:50px;}
+
+.row .colum1{
+ border-radius: 50px;
+ border-color: black;
+ }
+.row .colum2{
+ background: #edbc28;
+ border-radius: 50px;
+}
+
+.row .colum2 .name{
+ text-decoration: underline;}
+
+
+.butt{
+ padding-left: 20px;
+ text-align: center;}
+
+
+.main{
+ background: white;}
